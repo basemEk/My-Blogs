@@ -28,7 +28,7 @@
                 <td>
 {{--                    /posts/{{$post['id']}}--}}
                     <a href="{{route('posts.show', $post->id)}}" class="btn btn-info">View</a>
-                    <a href="{{route('posts.edit', $post->id)}}" class="btn btn-primary">Edit</a>
+                    <a href="{{route('posts.edit', $post->id)}}" class="btn btn-warning">Edit</a>
 
                     <form style="display: inline;" method="POST" action="{{route('posts.destroy', $post->id)}}">
                         @csrf
